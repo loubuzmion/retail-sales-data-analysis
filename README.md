@@ -44,7 +44,7 @@ Merged `Sales` with `Invoice` on `InvoiceNo`, then with `Product` on `StockCode`
 - Filtered out `Quantity = 0`. No rows were removed because the minimum quantity is already 1.
 - Plotted `Sales` by row index to spot outliers.
 
-> 📊 *Add image:* `![Sales outlier scatter plot](images/sales_outliers.png)`
+![Sales outlier scatter plot](sales-outliers-scatterplot.png)
 
 **Insight:** One transaction (about 74,215 units, roughly $77k in sales) sits far above all other transactions, which cluster close to zero.
 
@@ -53,16 +53,15 @@ Merged `Sales` with `Invoice` on `InvoiceNo`, then with `Product` on `StockCode`
 - **Histogram: Sales distribution** shows most transactions have very small sales values, with a long right tail.
 - **Line chart: monthly Sales trend** shows total sales per month (by `YearMonth`) from 2015 to 2018.
 
-> 📊 *Add images:*
-> ![Quantity vs Sales](images/quantity_vs_sales.png)
-> ![Sales distribution](images/sales_histogram.png)
-> ![Monthly sales trend](images/monthly_sales_trend.png)
+![Quantity vs Sales](quantity-vs-sales-scatterplot.png)
+![Sales distribution](sales-distribution-histogram.png)
+![Monthly sales trend](monthly-sales-trend.png)
 
 ### 6. Correlation
 - Pearson correlation between `Quantity` and `Sales` = **0.979**, a very strong positive relationship.
 - This is expected, since `Sales = Quantity × UnitPrice` and unit prices are small and fairly uniform. Note that the extreme bulk order will inflate this figure.
 
-> 📊 *Add image:* `![Correlation heatmap](images/correlation_heatmap.png)`
+![Correlation heatmap](correlation-heatmap.png)
 
 ### 7. Grouping and aggregation
 - **Total sales by `Product_Category`** using `groupby`.
