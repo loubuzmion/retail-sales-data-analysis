@@ -1,3 +1,4 @@
+![Retail Sales EDA Analysis](retail-sales-eda.jpg)
 # Retail Sales EDA with Pandas, Matplotlib & Seaborn
 
 Exploratory Data Analysis (EDA) of a retail transactions dataset (Jan 2015 – Dec 2018), built in a Microsoft Fabric notebook. The project covers loading and merging multiple tables, cleaning and descriptive statistics, outlier detection, visualisation, correlation analysis, and grouped/pivoted summaries.
