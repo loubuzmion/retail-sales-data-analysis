@@ -16,7 +16,7 @@ After merging, the combined table has **83,277 transaction lines**.
 
 ## Tools & Libraries
 
-Python 3.12, pandas, Matplotlib, Seaborn, Microsoft Fabric notebooks.
+Python 3.15, Pandas, Matplotlib, Seaborn, Microsoft Fabric notebooks.
 
 ## Approach
 
